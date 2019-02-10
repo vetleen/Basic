@@ -8,5 +8,5 @@ app.get('/', (req, res) => {
 });
 
 app.listen(8000, () => {
-  console.log('Listening on port: '  + heorkuPort + ".")
+  console.log('Listening on port: '  + herokuPort + ".")
 });
