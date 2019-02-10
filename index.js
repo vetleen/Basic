@@ -7,6 +7,6 @@ app.get('/', (req, res) => {
   res.send('Hello World!')
 });
 
-app.listen(8000, () => {
+app.listen(process.env.PORT, () => {
   console.log('Listening on port: '  + herokuPort + ".")
 });
