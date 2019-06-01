@@ -1,12 +1,12 @@
 const express = require('express')
 const app = express();
 const herokuPort = process.env.PORT;
-const db = process.env.MONGODB_URI;
+//const db = process.env.MONGODB_URI;
 
 // Connect to database
 var mongoose = require('mongoose');
-//console.log("trying to connect to: " + db)
-mongoose.connect(db, { useNewUrlParser: true });
+//console.log("trying to connect to: " + process.env.MONGODB_URI)
+mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true });
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function() {
