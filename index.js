@@ -1,7 +1,6 @@
 const express = require('express')
 const app = express();
 const herokuPort = process.env.PORT;
-//const db = process.env.MONGODB_URI;
 
 // Connect to database
 var mongoose = require('mongoose');
